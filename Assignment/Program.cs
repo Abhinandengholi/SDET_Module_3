@@ -49,7 +49,7 @@ static void CreateUser(RestClient client)
     Console.WriteLine("Created"+createUserResponse.Content);
 }
 
-//PUT OR PATCH or update
+//PUT  or update
 static void UpdateUser(RestClient client)
 {
     var updateUserRequest = new RestRequest("posts/1", Method.Put);
@@ -59,7 +59,7 @@ static void UpdateUser(RestClient client)
     Console.WriteLine("PUT update User response" + updateUserResponse.Content);
 }
 
-//DELETE
+//DELETE 
 static void DeleteUser(RestClient client)
 {
     var deleteUserRequest = new RestRequest("posts/1", Method.Delete);
