@@ -193,6 +193,7 @@ namespace CaseStudy
             var gettokenresponse = client.Execute(gettokenrequest);
             var token = JsonConvert.DeserializeObject<Bookingdetails>(gettokenresponse.Content);
 
+
             var deleteUserRequest = new RestRequest("booking/" + usrid, Method.Delete);
             deleteUserRequest.AddHeader("Content-Type", "application/json");
             deleteUserRequest.AddHeader("Cookie", "token=" + token?.Token);
