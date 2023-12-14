@@ -207,7 +207,7 @@ namespace CaseStudy
             }
             catch (AssertionException)
             {
-                test.Fail("Delete booking test failed");
+                test.Fail("Delete booking test failed"); 
 
             }
         }
